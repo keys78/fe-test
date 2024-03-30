@@ -10,11 +10,11 @@ interface TodoProps {
 
 const Todo: React.FC<TodoProps> = ({ setShowAddTask }) => {
     return (
-        <section className='max-w-[424px] bg-gray-100'>
+        <section className='lg:max-w-[424px] w-[100%] bg-gray-100 shadow-lg'>
             <Profile />
             <Advert />
             <TodoList setShowAddTask={setShowAddTask}/>
-            <div className='flex items-center justify-around'>
+            <div className='flex items-center justify-between px-5'>
               <div>&nbsp;</div>
             <button className='' onClick={() => setShowAddTask(true)}>
               <img src={addButton} alt="" />
