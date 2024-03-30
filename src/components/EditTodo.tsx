@@ -39,16 +39,16 @@ const EditTodo: React.FC<EditTodoProps> = ({
       />
     <div className="flex space-x-5">
     <button
-        className="bg-customBlue text-white w-full py-3 rounded-md mt-10 max-w-[150px]"
-        onClick={handleSaveEdit}
-      >
-        Save
-      </button>
-      <button
-        className="bg-red-600 text-white w-full py-3 rounded-md mt-10"
+        className="bg-red-600 text-white w-full py-3 rounded-md mt-10 max-w-[150px]"
         onClick={handleDeleteTodo}
       >
         Delete
+      </button>
+      <button
+        className="bg-customBlue text-white w-full py-3 rounded-md mt-10"
+        onClick={handleSaveEdit}
+      >
+        Save
       </button>
     </div>
     </div>

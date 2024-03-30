@@ -39,7 +39,7 @@ const TodoList: React.FC<TodoListProps> = ({ setShowAddTask }) => {
                     <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
                         {todo.text}
                     </span>
-                    <button className='border-2 border-customBlue p-2 text-customBlue' onClick={() => handleEditTodo(todo.id)}>Edit</button>
+                    <button className='border-2 border-customBlue p-2 text-customBlue rounded-md' onClick={() => handleEditTodo(todo.id)}>Edit</button>
                 </li>
             ))}
             {editingTodoId !== null && (
