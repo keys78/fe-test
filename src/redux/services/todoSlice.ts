@@ -12,9 +12,9 @@ interface TodoState {
 
 const initialState: TodoState = {
   todos: [
-    { id: 1, text: 'Training at the gym', completed: false },
+    { id: 1, text: 'Training at the gym', completed: true },
     { id: 2, text: 'Playing paddle with friends', completed: false },
-    { id: 3, text: 'Burger BBQ with family', completed: true },
+    { id: 3, text: 'Burger BBQ with family', completed: false },
   ],
 };
 

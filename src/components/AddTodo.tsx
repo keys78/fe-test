@@ -13,7 +13,8 @@ const AddTodo = () => {
         }
       };
   return (
-   <div className='mx-6 mt-6' >
+   <div className='mx-6 mt-6 flex flex-col items-center justify-between space-y-[365px]' >
+    <div className='w-full'>
     <label>Task Name</label>
      <input 
         type="text"
@@ -21,7 +22,8 @@ const AddTodo = () => {
         value={newTodoText} 
         onChange={(e) => setNewTodoText(e.target.value)} 
       />
-      <button 
+    </div>
+    <button 
       className='bg-customBlue text-white w-full py-3 rounded-md mt-10' 
       onClick={handleAddTodo}>Save</button>
    </div>
